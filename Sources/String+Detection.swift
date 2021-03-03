@@ -203,7 +203,7 @@ extension String {
     
     public func detectMentions() -> [Range<String.Index>] {
         
-        return detect(regex: "(?:^|\\s|$|[.])@[\\p{L}0-9_@.+]+")
+        return detect(regex: "(?:^|\\s|$|[.])@[\\p{L}0-9_@.+-]+")
     }
     
     public func detect(regex: String, options: NSRegularExpression.Options = []) -> [Range<String.Index>] {
